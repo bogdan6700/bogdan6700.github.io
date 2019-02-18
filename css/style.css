@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9375rem;
+    color: #1c1c1c;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    color: #c9570b;
+}
+
+.highlight {
+    color: #c9570b;
+    font-weight: bold;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.b-border {
+    border-bottom: #c9570b 3px solid;
+}
+
+.button-1 {
+    height: 2.3125rem;
+    background: #c9570b;
+    border: 0;
+    padding: 0 1.25rem;
+    color: #ffffff;
+}
+
+/* Header */
+
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+header li {
+    display:inline;
+    padding: 0 0.9375rem;
+}
+
+header #logo {
+    float: left;
+}
+
+header #logo h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 0.725rem;
+}
+
+header .current a {
+    color: #c9570b;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #c9570b;
+    font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase {
+    min-height: 400px;
+    background: url('../images/showcase-small.png') no-repeat center center;
+    text-align: center;
+    color: #35424a;
+}
+
+#showcase h1 {
+    margin-top: 6.25rem;
+    font-size: 3.4375rem;
+    margin-bottom: 2.625rem;
+}
+
+#newsletter {
+    padding: 0.9375rem;
+    color: #ffffff;
+    background: #35424a;
+}
+
+/* Newsletter */
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 1rem;
+}
+
+#newsletter input[type="email"] {
+    padding: 0.25rem;
+    height: 1.5625rem;
+    width: 15.625rem;
+}
+
+/* Boxes */
+
+#boxes-2column {
+    margin: 3.5625rem 0;
+}
+
+#boxes-2column .box {
+    float: left;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#boxes-2column .box:not(:first-child) {
+    padding-left: 20px;
+}
+
+#boxes-2column .box:not(:last-child) {
+    padding-right: 20px;
+}
+
+#boxes-3column {
+    margin: 3.5625rem 0;
+}
+
+#boxes-3column .box {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+#boxes-3column img {
+    border-radius: 20px;
+}
+
+#boxes-4column {
+    margin: 3.5625rem 0;
+}
+
+#boxes-4column .box {
+    float: left;
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+#boxes-4column img {
+    border-radius: 80px;
+}
+
+/* Footer */
+
+footer {
+    padding: 20px; 
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #c9570b;
+    text-align: center;
+}
+
+/* Media Query */
+
+@media (max-width: 684px) {
+    #showcase h1{
+        margin-top: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #showcase {
+        background: url('../images/showcase-medium.png') no-repeat center -800px;
+    }
+}
+
+@media (max-width: 800px) {
+    header #logo, 
+    header nav, 
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: .8rem;
+    }
+
+    #boxes-2column .box, 
+    #boxes-3column .box, 
+    #boxes-4column .box {
+        float: none;
+        text-align: center;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 880px) {
+    #newsletter h1, 
+    #newsletter form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #newsletter button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 0.3125rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    #boxes-4column .split-2 {
+        float: none;
+        display:block;
+    }
+
+    #boxes-4column .box {
+        text-align: center;
+        width: 50%;
+    }
+}
+
+@media (min-width: 2000px) {
+    #showcase {
+        background: url('../images/showcase-large.png') no-repeat center -2000px;
+    }
+}
