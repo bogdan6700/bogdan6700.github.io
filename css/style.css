@@ -138,11 +138,11 @@ header a:hover {
 }
 
 #boxes-2column .box:not(:first-child) {
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 #boxes-2column .box:not(:last-child) {
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 
 #boxes-3column {
@@ -187,7 +187,59 @@ footer {
     text-align: center;
 }
 
+/* Blog */
+
+#main {
+    margin-top: 2.5rem;
+}
+
+article#blog {
+    float: left;
+    width: 70%;
+    padding-right: 3.25rem;
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+
+aside#sidebar {
+    float: left;
+    width: 30%;
+    color: #ffffff;
+    background-color: #35424a;
+    margin-top: 1.25rem;
+    padding: 0.625rem;
+    box-sizing: border-box;
+}
+
+/* Contact */
+
+section#contact-us .contact, section#contact-us h1 {
+    text-align: center;
+}
+
+section#contact-us .contact label, 
+section#contact-us .contact input,
+section#contact-us .contact textarea {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+section#contact-us .contact input {
+    padding: .25rem;
+}
+
 /* Media Query */
+
+@media (max-width: 400px) {
+    header nav, 
+    header nav li {
+        float: none;
+        display:block;
+        text-align: center;
+        width: 100%;
+    }
+}
 
 @media (max-width: 684px) {
     #showcase h1{
@@ -240,6 +292,13 @@ footer {
     #newsletter form input[type="email"] {
         width: 100%;
         margin-bottom: 0.3125rem;
+    }
+
+    article#blog, 
+    aside#sidebar {
+        float: none;
+        display: block;
+        width: 100%;
     }
 }
 
